@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bincom Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Election Results</h1>
+
+    <!-- Question 1 -->
+    <section>
+      <h2>Question 1: Polling Unit Results</h2>
+      <input id="pollingUnitId" placeholder="Enter Polling Unit ID" />
+      <button onclick="fetchPU()">Get Results</button>
+      <table id="puTable"></table>
+    </section>
+
+    <!-- Question 2 -->
+    <section>
+      <h2>Question 2: LGA Summed Results</h2>
+      <select id="lgaSelect" onchange="fetchLGA()">
+        <option value="">Select LGA</option>
+      </select>
+      <table id="lgaTable"></table>
+    </section>
+
+    <!-- Question 3 -->
+    <section>
+      <h2>Question 3: Enter New Polling Unit Results</h2>
+      <input id="newPU" placeholder="Polling Unit ID" />
+      <div id="partyInputs"></div>
+      <button onclick="submitResults()">Submit Results</button>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
