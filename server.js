@@ -3,6 +3,7 @@ import mysql from 'mysql2';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import path from 'path';
+import { fileURLToPath } from 'url';
 dotenv.config();
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
